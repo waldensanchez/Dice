@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 600px;
+    padding: 50px;
+    border: 1px solid black;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 15px 35px rgba(50,50,50,.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dice-wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.roll-button{
+    background-color: #b2bdca;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 0;
+    width: 150px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.export-button{
+    background-color: #b2bdca;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 0;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    width:100%
+}
+.shake{
+    animation: shake 0.5s infinite;
+
+}
+@keyframes shake {
+    0%{
+        transform: rotate(8deg);
+    }
+    50%{
+        transform: rotate(-8deg);   
+    }
+    100%{
+        transform: rotate(8deg)
+    }
+
+}
+
+.number-selector {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.number-selector button {
+width: 40px;
+height: 40px;
+background: rgb(131, 147, 163); /* Set the background color */
+color: white;
+text-align: center;
+cursor: pointer;
+border: none;
+border-radius: 10px; /* Rounded squares */
+margin: 0 10px;
+font-size: 25px;
+display: flex;
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+font-weight: bold;
+}
+
+.selected-number {
+font-size: 100%;
+}
+
+/* Table styles */
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+table, th, td {
+border: 1px solid rgb(131, 147, 163);
+}
+
+th, td {
+padding: 8px;
+text-align: center;
+}
+
+.form-control{
+    text-align: center;
+    size-adjust: flex;
+    width: 100px;
+    font-weight: bold;
+}
